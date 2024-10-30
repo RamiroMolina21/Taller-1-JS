@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menú Principal</title>
+    <script src="js/utilidades.js"></script>
+</head>
+
+<body>
+    <script>
+
+        h1 = crearNodoConTexto("h1", "Bienvenido al Sitio de Deadpool")
+        p1 = crearNodoConTexto("p", "Explora las siguientes páginas para conocer más sobre Deadpool y sus frases memorables.")
+        h2 = crearNodoConTexto("h2", "Menú de Navegación")
+        hDos = crearNodoConTexto("h2", "¿Quién es Deadpool?")
+        p2 = crearNodo("p")
+        texto1 = document.createTextNode("Deadpool, también conocido como ")
+        texto2 = document.createTextNode(", es un anti-héroe de Marvel conocido por su humor sarcástico y sus habilidades de combate.")
+        nombreDeadpool = crearNodoConTexto("strong","Wade Wilson")
+        p2.appendChild(texto1)
+        p2.appendChild(nombreDeadpool)
+        p2.appendChild(texto2)
+
+        imagen1 = crearImagen("../recursos/imagenes/imagen1.jpg", "200px", "230px")
+
+
+        ul = crearNodo("ul")
+        liOne = crearNodo("li")
+        liTwo = crearNodo("li")
+        primeraPag = crearEnlaces("a", "Personajes Principales", "html/ejercicio1.html", "_blank")
+        segundaPag = crearEnlaces("a", "Frases Memorables", "html/pagina2.html", "_blank")
+
+        adicionarNodoBody(h1)
+        adicionarNodoBody(p1)
+        adicionarNodoBody(h2)
+        adicionarNodoBody(ul)
+        adicionarNodoAContenedor(liOne, ul)
+        adicionarNodoAContenedor(liTwo, ul)
+        adicionarNodoAContenedor(primeraPag, liOne)
+        adicionarNodoAContenedor(segundaPag, liTwo)
+        adicionarNodoBody(hDos)
+        adicionarNodoBody(p2)
+        adicionarNodoBody(imagen1)
+      
+
+    </script>
+
+
+</body>
+
+</html>

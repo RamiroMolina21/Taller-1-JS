@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personajes Principales</title>
+    <script src="../js/utilidades.js"></script>
+</head>
+<body>
+    <script>
+        h1 = crearNodoConTexto("h1", "Personajes Principales de Deadpool")
+        h2 = crearNodoConTexto("h2", "Deadpool (Wade Wilson)")
+        
+        p1 = crearNodo("p")
+        texto1 = document.createTextNode("Deadpool, también conocido como ")
+        texto2 = document.createTextNode(", es el protagonista de la película. Es un mercenario con un sentido del humor único y habalidades de combate excepcionales.")
+        nombreDeadpool = crearNodoConTexto("strong","Wade Wilson")
+        p1.appendChild(texto1)
+        p1.appendChild(nombreDeadpool)
+        p1.appendChild(texto2)
+        imagen1 = crearImagen("../recursos/imagenes/imagen1.jpg", "200px", "230px")
+
+        h3 = crearNodoConTexto("h3", "Vanessa")
+        p2 = crearNodo("p")
+        text3 = document.createTextNode(" es la novia de Wade Wilson. Es una figura clave en la vida de Deadpool y su motivacion principal de la historia")
+        cursiva = crearNodoConTexto("em", "Vanessa Carlysle")
+        p2.appendChild(cursiva)
+        p2.appendChild(text3)
+        imagen2 = crearImagen("../recursos/imagenes/imagen2.jpg", "200px", "230px")
+
+        htres = crearNodoConTexto("h3", "Colossus")
+        p3 = crearNodo("p")
+        texto4 = document.createTextNode("Colossus, también conocido como")
+        texto5 = document.createTextNode(" es un miembro de los X-Men que intenta guiar a Deadpool hacia un camino más heroico.")
+        abreviatura = abrevia("Piotr Peter Nikolavievitch Rasputin", " Coloso")
+        p3.appendChild(texto4)
+        p3.appendChild(abreviatura)
+        p3.appendChild(texto5)
+        imagen3 = crearImagen("../recursos/imagenes/imagen3.webp")
+        
+        p4 = crearNodo("p")
+        texto6 = document.createTextNode("Estos son algunos de los personajes memorables de la película")
+        cursiva2 = crearNodoConTexto("em", " Deadpool.")
+        p4.appendChild(texto6)
+        p4.appendChild(cursiva2)
+
+        adicionarNodoBody(h1)
+        adicionarNodoBody(h2)
+        adicionarNodoBody(p1)
+        adicionarNodoBody(imagen1)
+        adicionarNodoBody(h3)
+        adicionarNodoBody(p2)
+        adicionarNodoBody(imagen2)
+        adicionarNodoBody(htres)
+        adicionarNodoBody(p3)
+        adicionarNodoBody(imagen3)
+        adicionarNodoBody(p4)
+        
+
+
+
+
+    </script>
+    
+</body>
+</html>
